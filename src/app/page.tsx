@@ -38,7 +38,7 @@ export default function InsuranceFormPage() {
     setLoading(true);
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/recommendation`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/recommendation/insurance_plans`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
